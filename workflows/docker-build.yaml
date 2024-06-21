@@ -7,7 +7,7 @@ on:
 
 
 env:
-  IMAGE_NAME: joan314/Prueba-12
+  IMAGE_NAME: joan227/Prueba-12
   SHA: ${{ github.event.pull_request.head.sha || github.event.after }}
   DOCKERFILE_PATH: Dockerfile
 
@@ -27,7 +27,7 @@ jobs:
       - name: Log into registry
         uses: docker/login-action@v2
         with:
-          username: joan314
+          username: joan227
           password: ${{ secrets.MI_PTA_DOCKERHUB }}
 
       - name: Extract Docker metadata
