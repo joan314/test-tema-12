@@ -28,7 +28,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: joan227
-          password: ${{ secrets.MI_PTA_DOCKERHUB }}
+          password: ${{ secrets.MI_PTA_DOCKERHUB_V2 }}
 
       - name: Extract Docker metadata
         id: meta
